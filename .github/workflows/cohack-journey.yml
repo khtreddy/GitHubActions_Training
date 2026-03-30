@@ -8,3 +8,9 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello World!"
+
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: List Files
+        run: ls -la
