@@ -14,3 +14,11 @@ jobs:
 
       - name: List Files
         run: ls -la
+
+      - name: Generate ASCII Artwork
+        run: |
+          sudo apt-get install -y figlet
+          figlet "GH-200 CoHack for ANZ"
+          echo "-------------------------------------------"
+          figlet -f slant "GitHub Actions"
+          echo "✅ ASCII art generated using figlet!"
